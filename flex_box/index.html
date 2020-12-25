@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.contain-in > div1 {
+  border: 1px inset lightblue;
+  background-color: rgba(176, 224, 230, 0.904);
+  width: 50px;
+  height: 50px;
+  margin: 3px;
+}
+.contain-in > div2 {
+  border: 1px inset rgb(255, 230, 192);
+  background-color:khaki;
+  width: 150px;
+  height: 50px;
+  margin: 3px;
+}
+.contain-out {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 330px;
+  background-color: rgba(123, 255, 47, 0.863);
+  padding: 3px;
+}
+.contain-in{
+  display: flex;
+  height: 60px;
+  width: 330px;
+  background-color: rgba(123, 255, 47, 0.863);
+}
+</style>
+</head>
+
+<body>
+<div class="contain-out">
+  <div class="contain-in" >
+    <div1></div1>
+    <div1></div1>
+    <div1></div1>
+    <div2></div2>
+  </div>
+  <div class="contain-in" style="width: 174px;">
+    <div2></div2>
+  </div>
+  <div class="contain-in" style="width: 156px; justify-content: flex-end;">
+    <div1></div1>
+    <div1></div1>
+  </div>
+  <div class="contain-in" style="justify-content: space-between;">
+    <div2></div2>
+    <div2></div2>
+  </div>
+  <div class="contain-in" style="width: 174px; justify-content: flex-end;">
+    <div1></div1>
+    <div1></div1>
+  </div>
+  <div class="contain-in" style="width: 156px; justify-content: flex-end;">
+    <div1></div1>
+    <div1></div1>
+  </div>
+  <div class="contain-in">
+    <div1></div1>
+    <div1></div1>
+    <div1></div1>
+    <div1></div1>
+  </div>
+  <div class="contain-in" style="width: 174px; justify-content: flex-end;">
+    <div1></div1>
+  </div>
+  <div class="contain-in" style="width: 156px; justify-content: flex-end;">
+    <div1></div1>
+  </div>
+  <div class="contain-in" style="justify-content: space-between;">
+    <div1></div1>
+    <div2></div2>
+    <div1></div1>
+  </div>
+</div>
+</body>
+</html>
